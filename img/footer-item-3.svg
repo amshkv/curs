@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="-0.0001 0.0001 17.9999 0.0001 17.9999 1 -0.0001 1"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Онлайн-образование-СРО+Курсон-1440" transform="translate(-1053.000000, -4766.000000)">
+            <g id="Group-14" transform="translate(0.000000, 4606.000000)">
+                <g id="Group-6-Copy-2" transform="translate(963.000000, 160.000000)">
+                    <g id="3steps-icon-3" transform="translate(90.000000, 0.000000)">
+                        <circle id="Oval" fill-opacity="0.2" fill="#000000" fill-rule="nonzero" cx="60" cy="60" r="60"></circle>
+                        <g id="Group-18" transform="translate(42.000000, 34.000000)">
+                            <path d="M42.9999,11.0076 L44.9999,11.0076 L45.4169,10.1766 C45.7489,9.5166 45.5619,8.7126 44.9719,8.2676 L34.3819,0.2696 C33.9789,-0.0434 33.5059,-0.0034 32.9999,0.0076 L18.7199,0.0076 C18.2779,0.0076 17.8749,0.2566 17.6779,0.6506 C17.4229,1.1576 17.5719,1.7746 18.0279,2.1116 L29.6019,10.6356 C29.9459,10.9036 30.5659,11.0166 30.9999,11.0076 L40.9999,11.0076" id="Stroke-1" stroke="#76BC21" stroke-width="3"></path>
+                            <path d="M32.5302,4.5682 L40.0002,10.0072 C40.5602,10.3872 41.0002,11.7152 41.0002,13.0072 L41.0002,21.0072" id="Stroke-3" stroke="#76BC21" stroke-width="3"></path>
+                            <path d="M23.1547,6.2098 L21.3267,11.7168 C20.8777,13.0678 23.8007,15.2548 27.8557,16.6008 C31.9107,17.9468 35.5617,17.9418 36.0097,16.5908 L37.8387,11.0848" id="Stroke-5" stroke="#76BC21" stroke-width="3"></path>
+                            <path d="M35.9999,17.0076 L35.9999,36.0076 C35.9999,36.5596 35.5519,37.0076 34.9999,37.0076 L0.9999,37.0076 C0.4479,37.0076 -0.0001,36.5596 -0.0001,36.0076 L-0.0001,13.0076 C-0.0001,12.4546 0.4479,12.0076 0.9999,12.0076 L20.9999,12.0076" id="Stroke-7" stroke="#FFFFFF" stroke-width="2"></path>
+                            <path d="M13.9999,43.0076 L13.9999,39.0076" id="Stroke-9" stroke="#FFFFFF" stroke-width="2"></path>
+                            <path d="M21.9999,39.0076 L21.9999,43.0076" id="Stroke-11" stroke="#FFFFFF" stroke-width="2"></path>
+                            <g id="Group-15" transform="translate(9.000000, 43.007500)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Clip-14" stroke="#FFFFFF" stroke-width="2" xlink:href="#path-1"></use>
+                                <path d="M17.9999,0.0001 L-0.0001,0.0001" id="Stroke-13" stroke="#FFFFFF" stroke-width="2" mask="url(#mask-2)"></path>
+                            </g>
+                            <path d="M-0.0001,31.0076 L35.9999,31.0076" id="Stroke-16" stroke="#FFFFFF" stroke-width="2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

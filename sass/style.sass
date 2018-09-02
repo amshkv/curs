@@ -1,0 +1,1281 @@
+@import fonts.scss
+
+@mixin trans($element) 
+  transition: $element .3s ease-in-out;
+  
+@keyframes shake
+  0% 
+    transform:scale(1)
+  10%, 20% 
+    transform: scale(0.99) rotate(-1deg)
+  30%, 50%, 70%, 90% 
+    transform: scale(1.01) rotate(1deg)
+  40%, 60%, 80% 
+    transform: scale(1.01) rotate(-1deg)
+  100% 
+    transform: scale(1) rotate(0)
+
+@mixin wrapper 
+  max-width: 1116px
+  width: 100%
+  padding-left: 46px
+  padding-right: 46px
+  box-sizing: border-box
+  margin-left: auto
+  margin-right: auto
+
+@mixin size($width, $height: $width)
+  width: $width
+  height: $height
+
+@mixin bgcl($url, $ext)
+  background-image: url('../img/' + $url + '.' + $ext );
+  background-image: image-set(url('../img/' + $url + '.' + $ext) 1x, url('../img/' + $url+ '@2x.' + $ext) 2x, url('../img/' + $url + '@3x.' + $ext) 3x);
+
+@mixin bg($url, $ext)
+  background: url('../img/' + $url + '.' + $ext ) center no-repeat;
+  background: image-set(url('../img/' + $url + '.' + $ext) 1x, url('../img/' + $url+ '@2x.' + $ext) 2x, url('../img/' + $url + '@3x.' + $ext) 3x) center no-repeat;
+
+$main-fonts : Muller, sans-serif
+$bg-col: rgba(0,0,0,.3)
+$button-bord-col: rgba(255,255,255,.3)
+$main-color: #fff
+$second-color: #000
+$second-text-color: #4A4A4A
+$accent-color: #76BC21;
+$border-color-oval: #F4F4F4;
+$box-shadow-color: rgba(59,6,21,0.49)
+$title-primary-color: #E9E9E9;
+
+body 
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: $main-fonts
+  margin: 0;
+  padding: 0;
+  color: $second-color;
+  position: relative
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  overflow-x: hidden
+
+.header 
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  z-index: 1
+  background-color: #ffffff
+
+  &__inner
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    height: 72px
+    @include wrapper
+
+
+  &__logo
+    @include trans(opacity)
+
+    &--courson
+      @include size(160px, 21px)
+
+    &--as
+      @include size(114px, 40px)
+
+    &--sp
+      @include size(114px, 41px)
+    &--li
+      @include size(112px, 41px)
+      
+    &-img
+      display: block
+      width: 100%
+      height: auto
+    
+    &:hover
+      opacity: .5
+
+.main
+  overflow-x: hidden
+  
+
+.main-section
+  padding-top: 130px
+  padding-bottom: 71px
+  @include bg(header-bg, jpg)
+  background-color: $bg-col
+  background-size: cover
+
+  &__inner
+    @include wrapper
+    display: flex
+    justify-content: space-between
+    position: relative
+
+  &__title-wrapper
+    width: calc(50% - 12px);
+  &__subtitle
+    font-size: 20px
+    line-height: 24px
+    color: $main-color
+    text-transform: uppercase
+  &__title
+    font-weight: bold
+    font-size: 60px
+    line-height: 57px
+    color: $main-color
+    margin-top: 6px
+    margin-bottom: 0
+
+  &__info-block
+    width: calc(50% - 12px)
+    padding-left: 16px
+    box-sizing: border-box
+    
+  &__free
+    margin-top: 57px
+    padding-left: 88px
+    box-sizing: border-box
+    position: relative
+
+    &:before
+      content: ''
+      width: 49px
+      height: 54px
+      position: absolute
+      top: 0
+      left: 2px
+      background: url('../img/gift.svg') center no-repeat;
+
+
+    &-title
+      font-size: 24px
+      line-height: 29px
+      font-weight: bold
+      color: $main-color;
+      margin-top: 0
+      margin-bottom: 0
+      transform: translatez(0);
+
+      &-color
+        color: $accent-color;
+
+    &-text
+      color: $main-color;
+      font-size: 16px
+      line-height: 19px
+      margin-top: 10px
+      margin-bottom: 0
+      max-width: 360px
+
+    &-link
+      margin-top: 24px
+
+
+  
+
+.video-add
+  line-height: 19px;
+  font-size: 16px
+  color: $main-color
+  font-family: $main-fonts
+  background: transparent
+  border: none
+  max-width: 315px;
+  height: 56px
+  box-sizing: border-box
+  position: relative
+  padding-left: 88px
+  padding-top: 0
+  padding-bottom: 0
+  padding-right: 0
+  cursor: pointer
+  outline: none
+  text-decoration: underline
+  text-align: left
+
+  &:before
+    content: '';
+    position: absolute
+    left: 0
+    top: 0
+    width: 56px
+    height: 56px
+    background: url('../img/play-icon.svg') center no-repeat
+    @include trans(transform)
+
+  &:hover:before
+    transform: rotate(360deg)
+
+
+
+
+.link-button
+  height: 48px
+  line-height: 48px
+  font-size: 16px;
+  color: $main-color
+  display: block
+  text-align: center
+  text-decoration: none
+  user-select: none
+  font-weight: bold
+  border-radius: 16px
+  background-color: $accent-color
+  box-shadow: 0 10px 24px -12px $box-shadow-color
+
+  &--large
+    width: 260px
+    text-transform: uppercase
+  &--small
+    width: 220px
+
+  &--course
+    width: 220px
+    line-height: 32px
+    height: 32px
+
+
+  &:hover, &:focus
+    animation-name: shake;
+    animation-duration: 0.8s;
+    transform-origin: 50% 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+.main-title
+  font-size: 40px
+  line-height: 48px
+  margin-top: 0
+  margin-bottom: 0
+  font-weight: bold
+  position: relative
+  padding-left: 57px
+  box-sizing: border-box
+
+  &:before
+    content: ''
+    position: absolute
+    left: 13px 
+    top: 2px
+    width: 16px
+    background-color: #B20838;
+    height: 40px
+    transform: skewX(-30deg)
+
+  &--invert
+    color: $main-color
+
+
+.result
+  @include wrapper
+
+  &__title
+    margin-top: 82px
+
+  &__list
+    list-style: none
+    display: flex
+    justify-content: space-between
+    margin: 36px -14px 0
+    padding: 0
+    
+  &__item
+    width: 25%
+    padding-top: 148px
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translateX(-50%)
+      @include size(122px)
+      background-position: center
+      background-repeat: no-repeat
+      border: 2px solid $border-color-oval
+      background: $main-color
+      box-sizing: border-box
+      border-radius: 100%
+
+    &--one:before 
+      background-image: url('../img/what-icon-1.svg')
+    &--two:before
+      background-image: url('../img/what-icon-2.svg')
+    &--three:before
+      background-image: url('../img/what-icon-3.svg')
+      
+    &-title
+      font-size: 20px
+      line-height: 24px
+      text-align: center
+      font-weight: bold
+      margin-top: 0
+      margin-bottom: 0
+
+    &-text
+      font-size: 16px
+      line-height: 19px
+      color: $second-text-color
+      text-align: center
+      margin-top: 10px
+      margin-bottom: 0
+
+.advantages
+  @include wrapper
+  margin-top: 82px
+
+  &__list
+    margin: 38px 0 0
+    padding: 0
+    list-style: none
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__item
+    font-size: 16px
+    line-height: 19px
+    color: $second-color;
+    width: 50%
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    width: calc(50% - 12px)
+    box-sizing: border-box
+    position: relative
+    padding-left: 205px
+    height: 180px
+
+    &:before
+      content: ''
+      background-color: $bg-col
+      @include size(180px)
+      border-radius: 100%;
+      position: absolute
+      margin-right: 25px
+      background-position: center
+      background-repeat: no-repeat
+      left: 0
+      top: 50%;
+      transform: translateY(-50%)
+
+
+    &--one, &--two
+      margin-bottom: 40px
+
+    &--one, &--three
+      padding-left: 270px
+    
+    &--two, &--four
+      padding-left: 235px
+
+    &--one:before
+      @include bgcl(benefit-icon-1, jpg)
+      left: 65px
+    &--two:before
+      @include bgcl(benefit-icon-2, jpg)
+      left: 30px
+    &--three:before
+      @include bgcl(benefit-icon-3, jpg)
+      left: 65px
+    &--four:before
+      @include bgcl(benefit-icon-4, jpg)
+      left: 30px        
+
+  &__link
+    margin-left: auto
+    margin-right: auto
+    margin-top: 40px
+
+.courses
+  @include bg(courses-back, jpg)
+  background-size: cover
+  margin-top: 79px
+  background-color: $bg-col
+
+  &__inner
+    @include wrapper
+    padding-top: 82px
+    padding-bottom: 80px
+    position: relative
+    &:before
+      content: ''
+      @include size(130px, 306px)
+      position: absolute
+      right: calc(100% - 20px)
+      top: 20px
+      background-color: rgba(255, 255, 255, 0.0539)
+      transform: skew(-30deg)
+
+  &__wrapper
+    display: flex
+    margin-top: 54px
+    justify-content: space-between
+
+  &__button
+    background: transparent
+    border: 2px solid $button-bord-col
+    padding: 118px 0 0
+    border-radius: 40px;
+    box-shadow: 0 20px 30px -15px rgba(0,0,0,0.5);
+    @include size(calc(33.33% - 40px), 200px)
+    box-sizing: border-box
+    cursor: pointer
+    font-size: 20px
+    line-height: 24px
+    color: $main-color
+    font-weight: bold
+    font-family: $main-fonts
+    position: relative
+    @include trans(all)
+    outline: none
+
+    &:hover
+      background: rgba(255,255,255,0.1)
+      border-color: $accent-color 
+    &:before
+      content: ''
+      background-position: center
+      background-repeat: no-repeat
+      margin-bottom: 37px
+      position: absolute
+      bottom: 52px;
+      left: 50%
+      transform: translateX(-50%)
+
+    &--business:before
+      @include size(64px, 53px)
+      background-image: url('../img/biz.svg')
+    &--selling:before
+      @include size(64px, 61px)
+      background-image: url('../img/shop.svg')
+    &--development:before
+      @include size(67px, 69px)
+      background-image: url('../img/personal.svg')
+
+  &__text
+    margin-top: 34px
+    margin-bottom: 0
+    color: $main-color
+    text-align: center
+    font-size: 20px
+    line-height: 24px
+
+  &__link
+    margin-left: auto
+    margin-right: auto
+    margin-top: 30px
+
+.catalog
+  @include wrapper
+  margin-top: 82px
+
+  &__wrapper
+    padding-top: 32px
+
+  &__course
+    &-list
+      padding: 0
+      margin: 30px 0 0
+      list-style: none
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &-item
+      margin-bottom: 24px
+
+.course
+  width: calc(50% - 12px)
+  height: 400px
+  position: relative
+  display: flex
+  flex-direction: column
+  box-sizing: border-box
+  overflow: hidden
+  padding: 24px 32px 32px
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+  &__link
+    margin-top: auto
+    z-index: 2
+  
+  &__inner
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    @include trans(transform)
+    padding: 26px 32px 80px
+    box-sizing: border-box
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-end
+    align-content: flex-end
+
+    &--main
+      transform: translateX(0)
+    &--info
+      transform: translateX(100%)
+      flex-direction: column
+      align-items: flex-start
+      flex-wrap: nowrap
+  &:nth-child(odd)
+    .course__inner--main
+      transform: translateX(0)
+    .course__inner--info
+      transform: translateX(100%)
+    &:hover
+      .course__inner--main
+        transform: translateX(-100%)
+      .course__inner--info
+        transform: translateX(0)
+
+  &:nth-child(even)
+    .course__inner--main
+      transform: translateX(0)
+    .course__inner--info
+      transform: translateX(-100%)
+
+    &:hover
+      .course__inner--main
+        transform: translateX(100%)
+      .course__inner--info
+        transform: translateX(0)
+  
+  
+  &__number
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    color: $main-color
+    margin-bottom: auto
+    width: 100%
+    position: absolute
+    top: 26px
+    left: 32px
+
+  &__subtitle
+    font-size: 14px
+    line-height: 17px
+    color: $main-color
+    text-transform: uppercase
+    margin-bottom: 13px
+    width: 100%
+  &__title
+    font-size: 32px
+    line-height: 38px
+    font-weight: bold
+    color: $main-color
+    margin-top: 0
+    margin-bottom: 6px
+
+  &__text
+    font-size: 14px
+    line-height: 17px
+    color: $main-color
+    margin-top: 0
+    margin-bottom: 8px
+    width: 100%
+
+    
+  &__info
+    &-list
+      list-style: none
+      padding: 0 
+      margin: auto 0 7px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &-item
+      width: 50%
+      font-size: 14px
+      line-height: 17px
+      color: $main-color
+      height: 34px
+      display: flex
+      align-items: center
+      box-sizing: border-box
+
+      &:nth-child(1), &:nth-child(2)
+        margin-bottom: 15px
+
+      &:before
+        content: ''
+        @include size(34px)
+        flex: 0 0 34px
+        border-radius: 100%
+        border: 2px solid rgba(255,255,255,0.5);
+        box-sizing: border-box
+        margin-right: 7px
+        background-position: center
+        background-repeat: no-repeat
+        
+
+      &--time:before
+        background-image: url('../img/time.svg')
+      &--download:before
+        background-image: url('../img/download.svg')
+      &--blocks:before
+        background-image: url('../img/blocks.svg')
+      &--certificate:before
+        background-image: url('../img/certificate.svg')
+
+
+  &--one
+    @include bgcl(cours-pic-01,jpg)
+  &--two
+    @include bgcl(cours-pic-02,jpg)
+  &--three
+    @include bgcl(cours-pic-03,jpg)
+  &--four
+    @include bgcl(cours-pic-04,jpg)
+  &--five
+    @include bgcl(cours-pic-05,jpg)
+  &--six
+    @include bgcl(cours-pic-06,jpg)
+  &--seven
+    @include bgcl(cours-pic-07,jpg)
+  &--eight
+    @include bgcl(cours-pic-08,jpg)
+  &--nine
+    @include bgcl(cours-pic-09,jpg)
+  &--ten
+    @include bgcl(cours-pic-10,jpg)    
+
+  background-color: $bg-col
+  
+  
+.footer
+  margin-top: 56px
+  @include bg(3steps-back, jpg)
+  background-color: $bg-col
+  background-size: cover
+
+  &__inner
+    @include wrapper
+
+  &__top
+    position: relative
+    padding-top: 82px
+    &:before
+      content: ''
+      @include size(130px, 306px)
+      position: absolute
+      right: calc(100% - 50px)
+      top: 34px
+      background-color: rgba(255, 255, 255, 0.0539)
+      transform: skew(-30deg)
+
+  &__list
+    margin: 30px -16px 0
+    padding: 0
+    display: flex
+    justify-content: space-between
+    list-style: none
+    padding-bottom: 40px
+    position: relative
+    width: calc(100% + 32px)
+
+    &:before, &:after
+      content: ''
+      height: 2px
+      box-sizing: border-box
+      border-bottom: 2px dotted $accent-color
+      position: absolute
+      top: 60px
+      width: 24.5%
+    &:before
+      left: 19%
+    &:after
+      right: 19%
+
+  &__item
+    color: $main-color
+    font-size: 20px
+    line-height: 24px
+    font-weight: bold
+    width: 25%
+    text-align: center
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding-top: 145px
+    position: relative
+
+    &:before
+      content: ''
+      @include size(120px)
+      border-radius: 100%
+      background-color: rgba(0,0,0,0.2);
+      margin-bottom: 26px
+      background-repeat: no-repeat
+      background-position: center
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+
+    &--two
+      margin-left: auto
+      margin-right: auto
+
+    &--one:before
+      background-image: url('../img/footer-item-1.svg')
+    &--two:before
+      background-image: url('../img/footer-item-2.svg')
+    &--three:before
+      background-image: url('../img/footer-item-3.svg')
+      background-position: 56% 46%
+  &__bottom
+    background-color: rgba(0,0,0,0.2);
+
+    .footer__inner
+      display: flex
+      align-items: center
+      height: 80px
+  
+  &__copyright
+    font-size: 14px
+    line-height: 17px
+    color: $main-color;
+
+.modal
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba($second-color, .6);
+  box-shadow: 0 0 8px rgba($second-color,.3);
+  transition: margin-top .3s ease,height .3s ease;
+  transform: translateZ(0);
+  box-sizing: border-box;
+  z-index: 9999
+  display: none
+  align-items: center
+  justify-content: center
+  
+  &.active
+    display: flex;
+
+  &__inner
+    padding: 10px
+    width: 75%
+    max-width: 900px
+
+  &__wrapper
+    position: relative;
+    height: 0;
+    border: none;
+    padding-top: 56.27%;
+
+  &__body
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($second-color,.3);
+
+  &__iframe
+    display: block
+    width: 100%
+    height: 100%
+
+  &__close
+    color: $main-color;
+    position: absolute;
+    bottom: 100%;
+    right: 0px;
+    cursor: pointer;
+    display: block;
+    font-size: 60px
+    line-height: 60px
+    text-align: center
+    @include size(60px)
+    @include trans(transform)
+    transform: rotate(45deg)
+
+    &:hover
+      transform: rotate(315deg)
+
+@media screen and (max-width: 1260px)
+  .main-section__inner:before
+    right: 0
+  
+  .result
+    &__title
+      margin-top: 57px
+    &__list
+      margin-left: 12px
+      margin-right: 12px
+
+  .advantages
+    margin-top: 58px
+
+    &__item
+      width: calc(50% - 18px)
+
+      &--one, &--two, &--three, &--four
+        padding-left: 205px
+
+      &--one:before, &--two:before, &--three:before, &--four:before
+        left: 0
+
+  .courses
+    margin-top: 56px
+
+    &__inner  
+      padding-top: 58px
+      padding-bottom: 56px
+
+    &__wrapper
+      margin-top: 38px
+
+  .courses__inner:before
+    right: auto;
+    left: 112px;
+    top: 20px;
+
+  .catalog
+    margin-top: 58px
+
+  .course
+    width: calc(50% - 10px);
+
+  .link-button--course
+    width: 200px
+
+  .footer
+    margin-top: 32px
+    &__top
+      padding-top: 58px
+      &:before
+        right: auto
+        left: 113px
+        top: 22px
+    &__list
+      margin-top: 40px
+      margin-left: 12px
+      margin-right: 12px
+      width: calc(100% - 24px)
+      padding-bottom: 54px
+
+
+@import slick
+
+@media screen and (max-width: 1023px)
+  .catalog__course-list
+    margin-right: -46px
+  .course
+    @include size(270px, 245px)
+    margin-right: 12px
+    outline: none
+    padding: 16px
+    margin-bottom: 0
+
+    &__inner
+      padding: 16px 16px 46px
+
+    &__link
+      position: absolute
+      top: 0
+      bottom: 16px
+
+    &__number
+      font-size: 10px
+      line-height: 12px
+      top: 18px
+      left: 16px
+
+    &__title
+      font-size: 16px
+      line-height: 19px
+
+    &__subtitle
+      font-size: 10px
+      line-height: 12px
+      margin-bottom: 7px
+
+    &__text
+      font-size: 9px
+      line-height: 11px
+      margin-bottom: 5px
+
+    &__info
+      &-item
+        font-size: 8px
+        line-height: 12px
+        height: 24px
+        &:nth-child(1), &:nth-child(2)
+          margin-bottom: 5px
+
+        &:before
+          @include size(24px)
+          flex: 0 0 24px
+          background-size: 10px
+
+
+  .link-button--course
+    height: 24px
+    width: 150px
+    border-radius: 12px
+    line-height: 24px
+    font-size: 12px
+    box-shadow: 0 8px 18px -9px rgba(59,6,21,0.49)
+
+.slick-dots
+  display: flex
+  justify-content: center
+  list-style: none
+  margin: 12px 0 0
+  padding-left: 0
+  padding-right: 46px
+
+  button
+    text-indent: -9999px
+    border: none
+    display: block
+    width: 4px
+    height: 4px
+    background-color: #D8D8D8;
+    margin-left: 3px
+    margin-right: 3px
+    border-radius: 100%
+    padding: 0
+
+.slick-active button
+  background-color: $accent-color
+
+@media screen and (max-width: 899px)
+  .header
+    padding-left: 20px
+    padding-right: 20px
+    justify-content: space-between
+    padding-top: 24px
+    align-items: flex-start
+    &__logo
+      &--courson
+        margin-top: 6px
+        @include size(96px, 12px)
+  .main-section
+    padding-top: 87px
+    padding-bottom: 55px
+    &__inner
+      flex-wrap: wrap
+      padding-left: 26px
+      padding-right: 26px
+      &:before
+        right: -91%;
+        top: -90px;
+    &__title-wrapper
+      width: 100%
+    &__info-block
+      width: 100%
+      padding-left: 0
+      margin-top: 30px
+      max-width: 320px
+      margin-left: auto
+      margin-right: auto
+    &__subtitle
+      font-size: 14px
+      line-height: 17px
+      text-align: center
+    &__title
+      font-size: 40px
+      line-height: 40px
+      text-align: center
+      margin-top: 9px
+
+    &__free
+      margin-top: 23px
+      padding-left: 52px
+      &-title
+        font-size: 16px
+        line-height: 19px
+      &-text
+        font-size: 12px
+        line-height: 14px
+        margin-top: 8px   
+        margin-right: -10px   
+
+      &:before
+        @include size(24.5px, 27px)
+        top: 4px
+        left: 0
+
+      &-link
+        margin-top: 12px
+  
+
+  .video-add
+    font-size: 12px
+    line-height: 14px
+    height: 28px
+    padding-left: 54px
+    &:before
+      @include size(28px)
+
+  .link-button
+    font-size: 12px
+    
+    &--large
+      width: 164px
+      height: 32px
+      line-height: 32px
+      border-radius: 8px;
+      box-shadow: 0 5px 12px -6px rgba(59,6,21,0.49);
+
+    &--small
+      width: 165px
+      line-height: 36px
+      height: 36px
+      border-radius: 12px;
+      box-shadow: 0 8px 18px -9px rgba(59,6,21,0.49);
+
+  .main-title
+    font-size: 24px
+    line-height: 29px
+    padding-left: 28px
+
+    &:before
+      height: 20px
+      top: 3px
+      width: 7px
+      left: 7px
+
+
+  .result
+    padding-left: 20px
+    padding-right: 20px
+    &__title
+      margin-top: 33px
+    &__list
+      margin-top: 29px
+      margin-left: auto
+      margin-right: auto
+      flex-wrap: wrap
+      max-width: 500px
+    &__item
+      width: 100%
+      padding-top: 0
+      padding-left: 120px
+      height: 100px
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      &-title
+        text-align: left
+
+      &-text
+        text-align: left
+
+      &:before
+        @include size(90px)
+        left: 0
+        top: 50%
+        transform: translate(0, -50%)
+
+  .advantages
+    padding-left: 20px
+    padding-right: 20px
+    margin-top: 11px
+
+    &__list
+      margin-top: 22px
+      max-width: 500px
+      margin-left: auto
+      margin-right: auto
+
+    &__item
+      width: 100%
+      margin-bottom: 16px
+      height: 90px
+      padding-left: 107px
+
+      &:before
+        @include size(90px)
+        background-size: cover
+
+    &__link
+      margin-top: 8px
+    
+  .courses
+    margin-top: 32px
+
+    &__inner
+      padding-top: 34px
+      padding-bottom: 31px
+      padding-left: 20px
+      padding-right: 20px
+
+      &:before
+        display: none
+
+    &__wrapper
+      flex-wrap: wrap
+      margin-top: 22px
+      margin-left: auto
+      margin-right: auto
+      max-width: 400px
+
+    &__button
+      width: 100%
+      margin-bottom: 16px
+      height: 100px
+      border-radius: 24px
+      padding-top: 0
+      font-size: 16px
+      line-height: 19px
+      padding-left: 108px
+      text-align: left
+
+      &:before
+        left: 28px
+        top: 50%
+        transform: translate(0, -50%)
+
+      &--business:before
+        @include size(48px, 40px)
+      &--selling:before
+        @include size(48px, 46px)
+        left: 30px
+      &--development:before
+        @include size(50px, 44px)
+
+    &__text
+      font-size: 14px
+      line-height: 17px
+      margin-top: 9px
+      margin-left: -8px
+      margin-right: -8px
+
+
+    &__link
+      margin-top: 24px
+
+    .dib
+      display: inline-block
+
+  .catalog
+    margin-top: 34px
+    padding-left: 20px
+    padding-right: 20px
+    
+    &__wrapper
+      padding-top: 10px
+      padding-bottom: 14px
+    &__course
+      &-list
+        margin-top: 12px
+        margin-left: -20px
+
+  .footer
+    margin-top: 18px
+    &__inner
+      padding-left: 20px
+      padding-right: 20px
+    &__top
+      padding-top: 35px
+
+      &:before
+        display: none
+
+    &__list
+      flex-wrap: wrap;
+      width: 100%
+      max-width: 400px;
+      margin-left: auto
+      margin-right: auto
+      margin-top: 19px
+      padding-bottom: 12px
+      &:before, &:after
+        display: none
+    &__item
+      height: 90px
+      width: 100%
+      padding-top: 0
+      padding-left: 107px
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      font-size: 16px
+      line-height: 19px
+      text-align: left
+      margin-bottom: 18px
+
+      &:before
+        @include size(90px)
+        top: 50%
+        left: 0
+        transform: translate(0, -50%)
+        margin-bottom: 0
+        background-size: 38px
+        
+    &__bottom
+      .footer__inner
+        height: 40px
+        justify-content: center
+    &__copyright
+      font-size: 12px
+      line-height: 14px
+
+.slick-dots
+  padding-right: 20px
+
+@media screen and (max-width: 599px)
+  .result
+    &__list
+      max-width: 400px
+    &__item
+      padding-left: 76px
+      margin-bottom: 28px
+      height: 48px
+      &-title
+        font-size: 14px
+        line-height: 17px
+        text-align: left
+      
+      &-text
+        text-align: left
+        font-size: 12px
+        line-height: 14px
+        margin-top: 3px
+        padding-right: 10px
+
+      &:before
+        @include size(61px)
+        border-width: 1px
+
+  .advantages
+    &__list
+      max-width: 400px
+    &__item
+      font-size: 12px
+      line-height: 14px
+      width: 100%
+      margin-bottom: 16px
+
+      &:before
+        @include size(90px)
+        flex: 0 0 90px
+        margin-right: 16px
+        background-size: cover
+
+@media screen and (orientation: landscape) and (min-aspect-ratio: 16/9)
+  .modal__inner
+    width: 45%;
+
+@media screen and (orientation: portrait)
+  .modal__inner
+    width: 100%;
