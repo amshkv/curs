@@ -30,7 +30,6 @@
 
 @mixin bgcl($url, $ext)
   background-image: url('../img/' + $url + '.' + $ext );
-  background-image: image-set(url('../img/' + $url + '.' + $ext) 1x, url('../img/' + $url+ '@2x.' + $ext) 2x, url('../img/' + $url + '@3x.' + $ext) 3x);
 
 @mixin bg($url, $ext)
   background: url('../img/' + $url + '.' + $ext ) center no-repeat;
@@ -653,6 +652,9 @@ body
     @include bgcl(cours-pic-05,png)
   &--six
     @include bgcl(cours-pic-06,png)
+
+    &-second
+      display: none
   &--seven
     @include bgcl(cours-pic-07,png)
   &--eight
@@ -821,6 +823,8 @@ body
       transform: rotate(315deg)
 
 @media screen and (max-width: 1260px)
+  .br
+    display: none
   .main-section__inner:before
     right: 0
   
@@ -894,6 +898,12 @@ body
     outline: none
     padding: 16px
     margin-bottom: 0
+
+    &--six
+      &-first
+        display: none!important
+      &-second
+        display: block
 
     &__inner
       padding: 16px 16px 46px
@@ -970,15 +980,22 @@ body
 
 @media screen and (max-width: 899px)
   .header
-    padding-left: 20px
-    padding-right: 20px
-    justify-content: space-between
-    padding-top: 24px
-    align-items: flex-start
+    &__inner
+      justify-content: space-between
+      align-items: center
+      height: 60px
+      padding-left: 20px
+      padding-right: 20px
+
     &__logo
+      margin-left: 10px
+      margin-right: 10px
+      @include size(96px, 33px)
+
       &--courson
-        margin-top: 6px
-        @include size(96px, 12px)
+        display: flex
+        justify-content: center
+        flex-direction: column
   .main-section
     padding-top: 87px
     padding-bottom: 55px
@@ -1007,6 +1024,9 @@ body
       line-height: 40px
       text-align: center
       margin-top: 9px
+
+      &-span
+        margin-top: 0
 
     &__free
       margin-top: 23px
@@ -1246,6 +1266,18 @@ body
   padding-right: 20px
 
 @media screen and (max-width: 599px)
+  .header
+    &__inner
+      flex-wrap: wrap
+      height: 50px
+      align-content: center
+    
+    &__logo
+      margin-top: 5px
+      margin-bottom: 5px
+      @include size(70px, 25px)
+  .main-section
+    padding-top: 70px    
   .result
     &__list
       max-width: 400px
@@ -1283,6 +1315,20 @@ body
         flex: 0 0 90px
         margin-right: 16px
         background-size: cover
+
+
+@media screen and (max-width: 420px)
+  .header
+    &__inner
+      height: 40px
+
+    &__logo
+      @include size(60px, 25px)
+
+@media screen and (max-width: 380px)
+  .header
+    &__logo
+      @include size(50px, 20px)
 
 @media screen and (orientation: landscape) and (min-aspect-ratio: 16/9)
   .modal__inner

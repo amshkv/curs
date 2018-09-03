@@ -558,29 +558,21 @@ body {
 
 .advantages__item--one:before {
   background-image: url("../img/benefit-icon-1.jpg");
-  background-image: -webkit-image-set(url("../img/benefit-icon-1.jpg") 1x, url("../img/benefit-icon-1@2x.jpg") 2x, url("../img/benefit-icon-1@3x.jpg") 3x);
-  background-image: image-set(url("../img/benefit-icon-1.jpg") 1x, url("../img/benefit-icon-1@2x.jpg") 2x, url("../img/benefit-icon-1@3x.jpg") 3x);
   left: 65px;
 }
 
 .advantages__item--two:before {
   background-image: url("../img/benefit-icon-2.jpg");
-  background-image: -webkit-image-set(url("../img/benefit-icon-2.jpg") 1x, url("../img/benefit-icon-2@2x.jpg") 2x, url("../img/benefit-icon-2@3x.jpg") 3x);
-  background-image: image-set(url("../img/benefit-icon-2.jpg") 1x, url("../img/benefit-icon-2@2x.jpg") 2x, url("../img/benefit-icon-2@3x.jpg") 3x);
   left: 30px;
 }
 
 .advantages__item--three:before {
   background-image: url("../img/benefit-icon-3.jpg");
-  background-image: -webkit-image-set(url("../img/benefit-icon-3.jpg") 1x, url("../img/benefit-icon-3@2x.jpg") 2x, url("../img/benefit-icon-3@3x.jpg") 3x);
-  background-image: image-set(url("../img/benefit-icon-3.jpg") 1x, url("../img/benefit-icon-3@2x.jpg") 2x, url("../img/benefit-icon-3@3x.jpg") 3x);
   left: 65px;
 }
 
 .advantages__item--four:before {
   background-image: url("../img/benefit-icon-4.jpg");
-  background-image: -webkit-image-set(url("../img/benefit-icon-4.jpg") 1x, url("../img/benefit-icon-4@2x.jpg") 2x, url("../img/benefit-icon-4@3x.jpg") 3x);
-  background-image: image-set(url("../img/benefit-icon-4.jpg") 1x, url("../img/benefit-icon-4@2x.jpg") 2x, url("../img/benefit-icon-4@3x.jpg") 3x);
   left: 30px;
 }
 
@@ -975,62 +967,46 @@ body {
 
 .course--one {
   background-image: url("../img/cours-pic-01.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-01.png") 1x, url("../img/cours-pic-01@2x.png") 2x, url("../img/cours-pic-01@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-01.png") 1x, url("../img/cours-pic-01@2x.png") 2x, url("../img/cours-pic-01@3x.png") 3x);
 }
 
 .course--two {
   background-image: url("../img/cours-pic-02.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-02.png") 1x, url("../img/cours-pic-02@2x.png") 2x, url("../img/cours-pic-02@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-02.png") 1x, url("../img/cours-pic-02@2x.png") 2x, url("../img/cours-pic-02@3x.png") 3x);
 }
 
 .course--three {
   background-image: url("../img/cours-pic-03.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-03.png") 1x, url("../img/cours-pic-03@2x.png") 2x, url("../img/cours-pic-03@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-03.png") 1x, url("../img/cours-pic-03@2x.png") 2x, url("../img/cours-pic-03@3x.png") 3x);
 }
 
 .course--four {
   background-image: url("../img/cours-pic-04.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-04.png") 1x, url("../img/cours-pic-04@2x.png") 2x, url("../img/cours-pic-04@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-04.png") 1x, url("../img/cours-pic-04@2x.png") 2x, url("../img/cours-pic-04@3x.png") 3x);
 }
 
 .course--five {
   background-image: url("../img/cours-pic-05.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-05.png") 1x, url("../img/cours-pic-05@2x.png") 2x, url("../img/cours-pic-05@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-05.png") 1x, url("../img/cours-pic-05@2x.png") 2x, url("../img/cours-pic-05@3x.png") 3x);
 }
 
 .course--six {
   background-image: url("../img/cours-pic-06.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-06.png") 1x, url("../img/cours-pic-06@2x.png") 2x, url("../img/cours-pic-06@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-06.png") 1x, url("../img/cours-pic-06@2x.png") 2x, url("../img/cours-pic-06@3x.png") 3x);
+}
+
+.course--six-second {
+  display: none;
 }
 
 .course--seven {
   background-image: url("../img/cours-pic-07.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-07.png") 1x, url("../img/cours-pic-07@2x.png") 2x, url("../img/cours-pic-07@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-07.png") 1x, url("../img/cours-pic-07@2x.png") 2x, url("../img/cours-pic-07@3x.png") 3x);
 }
 
 .course--eight {
   background-image: url("../img/cours-pic-08.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-08.png") 1x, url("../img/cours-pic-08@2x.png") 2x, url("../img/cours-pic-08@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-08.png") 1x, url("../img/cours-pic-08@2x.png") 2x, url("../img/cours-pic-08@3x.png") 3x);
 }
 
 .course--nine {
   background-image: url("../img/cours-pic-09.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-09.png") 1x, url("../img/cours-pic-09@2x.png") 2x, url("../img/cours-pic-09@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-09.png") 1x, url("../img/cours-pic-09@2x.png") 2x, url("../img/cours-pic-09@3x.png") 3x);
 }
 
 .course--ten {
   background-image: url("../img/cours-pic-10.png");
-  background-image: -webkit-image-set(url("../img/cours-pic-10.png") 1x, url("../img/cours-pic-10@2x.png") 2x, url("../img/cours-pic-10@3x.png") 3x);
-  background-image: image-set(url("../img/cours-pic-10.png") 1x, url("../img/cours-pic-10@2x.png") 2x, url("../img/cours-pic-10@3x.png") 3x);
 }
 
 .footer {
@@ -1267,6 +1243,9 @@ body {
 }
 
 @media screen and (max-width: 1260px) {
+  .br {
+    display: none;
+  }
   .main-section__inner:before {
     right: 0;
   }
@@ -1451,6 +1430,12 @@ body {
     padding: 16px;
     margin-bottom: 0;
   }
+  .course--six-first {
+    display: none !important;
+  }
+  .course--six-second {
+    display: block;
+  }
   .course__inner {
     padding: 16px 16px 46px;
   }
@@ -1537,21 +1522,34 @@ body {
 }
 
 @media screen and (max-width: 899px) {
-  .header {
-    padding-left: 20px;
-    padding-right: 20px;
+  .header__inner {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-top: 24px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header__logo {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 96px;
+    height: 33px;
   }
   .header__logo--courson {
-    margin-top: 6px;
-    width: 96px;
-    height: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .main-section {
     padding-top: 87px;
@@ -1588,6 +1586,9 @@ body {
     line-height: 40px;
     text-align: center;
     margin-top: 9px;
+  }
+  .main-section__title-span {
+    margin-top: 0;
   }
   .main-section__free {
     margin-top: 23px;
@@ -1873,6 +1874,22 @@ body {
 }
 
 @media screen and (max-width: 599px) {
+  .header__inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 50px;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+  .header__logo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 70px;
+    height: 25px;
+  }
+  .main-section {
+    padding-top: 70px;
+  }
   .result__list {
     max-width: 400px;
   }
@@ -1915,6 +1932,23 @@ body {
     flex: 0 0 90px;
     margin-right: 16px;
     background-size: cover;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header__inner {
+    height: 40px;
+  }
+  .header__logo {
+    width: 60px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header__logo {
+    width: 50px;
+    height: 20px;
   }
 }
 
