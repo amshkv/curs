@@ -139,16 +139,19 @@ body {
 .header__logo--courson {
   width: 160px;
   height: 21px;
+  margin-right: 60px;
 }
 
 .header__logo--as {
   width: 114px;
   height: 40px;
+  margin-right: 63px;
 }
 
 .header__logo--sp {
   width: 114px;
   height: 41px;
+  margin-right: 65px;
 }
 
 .header__logo--li {
@@ -172,10 +175,8 @@ body {
 
 .main-section {
   padding-top: 130px;
-  padding-bottom: 71px;
-  background: url("../img/header-bg.jpg") center no-repeat;
-  background: -webkit-image-set(url("../img/header-bg.jpg") 1x, url("../img/header-bg@2x.jpg") 2x, url("../img/header-bg@3x.jpg") 3x) center no-repeat;
-  background: image-set(url("../img/header-bg.jpg") 1x, url("../img/header-bg@2x.jpg") 2x, url("../img/header-bg@3x.jpg") 3x) center no-repeat;
+  padding-bottom: 33px;
+  background: url("../img/header-video.png") center no-repeat;
   background-color: rgba(0, 0, 0, 0.3);
   background-size: cover;
 }
@@ -212,15 +213,21 @@ body {
 .main-section__title {
   font-weight: bold;
   font-size: 60px;
-  line-height: 57px;
   color: #fff;
-  margin-top: 6px;
+  margin-top: 8px;
   margin-bottom: 0;
+  line-height: 78px;
+}
+
+.main-section__title-span {
+  line-height: 57px;
+  display: block;
+  margin-top: 9px;
 }
 
 .main-section__info-block {
   width: calc(50% - 12px);
-  padding-left: 16px;
+  padding-left: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -265,7 +272,7 @@ body {
   line-height: 19px;
   margin-top: 10px;
   margin-bottom: 0;
-  max-width: 360px;
+  max-width: 350px;
 }
 
 .main-section__free-link {
@@ -584,9 +591,7 @@ body {
 }
 
 .courses {
-  background: url("../img/courses-back.jpg") center no-repeat;
-  background: -webkit-image-set(url("../img/courses-back.jpg") 1x, url("../img/courses-back@2x.jpg") 2x, url("../img/courses-back@3x.jpg") 3x) center no-repeat;
-  background: image-set(url("../img/courses-back.jpg") 1x, url("../img/courses-back@2x.jpg") 2x, url("../img/courses-back@3x.jpg") 3x) center no-repeat;
+  background: url("../img/courses-back.png") center no-repeat;
   background-size: cover;
   margin-top: 79px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -602,7 +607,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 82px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -611,7 +616,7 @@ body {
   width: 130px;
   height: 306px;
   position: absolute;
-  right: calc(100% - 20px);
+  right: calc(100% - 60px);
   top: 20px;
   background-color: rgba(255, 255, 255, 0.0539);
   -webkit-transform: skew(-30deg);
@@ -623,7 +628,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 54px;
+  margin-top: 36px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -716,13 +721,13 @@ body {
   margin-top: 82px;
 }
 
-.catalog__wrapper {
-  padding-top: 32px;
+.catalog__wrapper--business .catalog__course-list {
+  margin-top: 38px;
 }
 
 .catalog__course-list {
   padding: 0;
-  margin: 30px 0 0;
+  margin: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -889,6 +894,10 @@ body {
   margin-bottom: 6px;
 }
 
+.course__title .dib {
+  display: inline-block;
+}
+
 .course__text {
   font-size: 14px;
   line-height: 17px;
@@ -965,70 +974,68 @@ body {
 }
 
 .course--one {
-  background-image: url("../img/cours-pic-01.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-01.jpg") 1x, url("../img/cours-pic-01@2x.jpg") 2x, url("../img/cours-pic-01@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-01.jpg") 1x, url("../img/cours-pic-01@2x.jpg") 2x, url("../img/cours-pic-01@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-01.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-01.png") 1x, url("../img/cours-pic-01@2x.png") 2x, url("../img/cours-pic-01@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-01.png") 1x, url("../img/cours-pic-01@2x.png") 2x, url("../img/cours-pic-01@3x.png") 3x);
 }
 
 .course--two {
-  background-image: url("../img/cours-pic-02.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-02.jpg") 1x, url("../img/cours-pic-02@2x.jpg") 2x, url("../img/cours-pic-02@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-02.jpg") 1x, url("../img/cours-pic-02@2x.jpg") 2x, url("../img/cours-pic-02@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-02.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-02.png") 1x, url("../img/cours-pic-02@2x.png") 2x, url("../img/cours-pic-02@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-02.png") 1x, url("../img/cours-pic-02@2x.png") 2x, url("../img/cours-pic-02@3x.png") 3x);
 }
 
 .course--three {
-  background-image: url("../img/cours-pic-03.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-03.jpg") 1x, url("../img/cours-pic-03@2x.jpg") 2x, url("../img/cours-pic-03@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-03.jpg") 1x, url("../img/cours-pic-03@2x.jpg") 2x, url("../img/cours-pic-03@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-03.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-03.png") 1x, url("../img/cours-pic-03@2x.png") 2x, url("../img/cours-pic-03@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-03.png") 1x, url("../img/cours-pic-03@2x.png") 2x, url("../img/cours-pic-03@3x.png") 3x);
 }
 
 .course--four {
-  background-image: url("../img/cours-pic-04.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-04.jpg") 1x, url("../img/cours-pic-04@2x.jpg") 2x, url("../img/cours-pic-04@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-04.jpg") 1x, url("../img/cours-pic-04@2x.jpg") 2x, url("../img/cours-pic-04@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-04.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-04.png") 1x, url("../img/cours-pic-04@2x.png") 2x, url("../img/cours-pic-04@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-04.png") 1x, url("../img/cours-pic-04@2x.png") 2x, url("../img/cours-pic-04@3x.png") 3x);
 }
 
 .course--five {
-  background-image: url("../img/cours-pic-05.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-05.jpg") 1x, url("../img/cours-pic-05@2x.jpg") 2x, url("../img/cours-pic-05@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-05.jpg") 1x, url("../img/cours-pic-05@2x.jpg") 2x, url("../img/cours-pic-05@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-05.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-05.png") 1x, url("../img/cours-pic-05@2x.png") 2x, url("../img/cours-pic-05@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-05.png") 1x, url("../img/cours-pic-05@2x.png") 2x, url("../img/cours-pic-05@3x.png") 3x);
 }
 
 .course--six {
-  background-image: url("../img/cours-pic-06.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-06.jpg") 1x, url("../img/cours-pic-06@2x.jpg") 2x, url("../img/cours-pic-06@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-06.jpg") 1x, url("../img/cours-pic-06@2x.jpg") 2x, url("../img/cours-pic-06@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-06.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-06.png") 1x, url("../img/cours-pic-06@2x.png") 2x, url("../img/cours-pic-06@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-06.png") 1x, url("../img/cours-pic-06@2x.png") 2x, url("../img/cours-pic-06@3x.png") 3x);
 }
 
 .course--seven {
-  background-image: url("../img/cours-pic-07.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-07.jpg") 1x, url("../img/cours-pic-07@2x.jpg") 2x, url("../img/cours-pic-07@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-07.jpg") 1x, url("../img/cours-pic-07@2x.jpg") 2x, url("../img/cours-pic-07@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-07.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-07.png") 1x, url("../img/cours-pic-07@2x.png") 2x, url("../img/cours-pic-07@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-07.png") 1x, url("../img/cours-pic-07@2x.png") 2x, url("../img/cours-pic-07@3x.png") 3x);
 }
 
 .course--eight {
-  background-image: url("../img/cours-pic-08.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-08.jpg") 1x, url("../img/cours-pic-08@2x.jpg") 2x, url("../img/cours-pic-08@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-08.jpg") 1x, url("../img/cours-pic-08@2x.jpg") 2x, url("../img/cours-pic-08@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-08.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-08.png") 1x, url("../img/cours-pic-08@2x.png") 2x, url("../img/cours-pic-08@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-08.png") 1x, url("../img/cours-pic-08@2x.png") 2x, url("../img/cours-pic-08@3x.png") 3x);
 }
 
 .course--nine {
-  background-image: url("../img/cours-pic-09.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-09.jpg") 1x, url("../img/cours-pic-09@2x.jpg") 2x, url("../img/cours-pic-09@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-09.jpg") 1x, url("../img/cours-pic-09@2x.jpg") 2x, url("../img/cours-pic-09@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-09.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-09.png") 1x, url("../img/cours-pic-09@2x.png") 2x, url("../img/cours-pic-09@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-09.png") 1x, url("../img/cours-pic-09@2x.png") 2x, url("../img/cours-pic-09@3x.png") 3x);
 }
 
 .course--ten {
-  background-image: url("../img/cours-pic-10.jpg");
-  background-image: -webkit-image-set(url("../img/cours-pic-10.jpg") 1x, url("../img/cours-pic-10@2x.jpg") 2x, url("../img/cours-pic-10@3x.jpg") 3x);
-  background-image: image-set(url("../img/cours-pic-10.jpg") 1x, url("../img/cours-pic-10@2x.jpg") 2x, url("../img/cours-pic-10@3x.jpg") 3x);
+  background-image: url("../img/cours-pic-10.png");
+  background-image: -webkit-image-set(url("../img/cours-pic-10.png") 1x, url("../img/cours-pic-10@2x.png") 2x, url("../img/cours-pic-10@3x.png") 3x);
+  background-image: image-set(url("../img/cours-pic-10.png") 1x, url("../img/cours-pic-10@2x.png") 2x, url("../img/cours-pic-10@3x.png") 3x);
 }
 
 .footer {
   margin-top: 56px;
-  background: url("../img/3steps-back.jpg") center no-repeat;
-  background: -webkit-image-set(url("../img/3steps-back.jpg") 1x, url("../img/3steps-back@2x.jpg") 2x, url("../img/3steps-back@3x.jpg") 3x) center no-repeat;
-  background: image-set(url("../img/3steps-back.jpg") 1x, url("../img/3steps-back@2x.jpg") 2x, url("../img/3steps-back@3x.jpg") 3x) center no-repeat;
+  background: url("../img/3steps-back.png") center no-repeat;
   background-color: rgba(0, 0, 0, 0.3);
   background-size: cover;
 }
@@ -1054,7 +1061,7 @@ body {
   width: 130px;
   height: 306px;
   position: absolute;
-  right: calc(100% - 50px);
+  right: calc(100% - 90px);
   top: 34px;
   background-color: rgba(255, 255, 255, 0.0539);
   -webkit-transform: skew(-30deg);

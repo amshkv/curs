@@ -34,7 +34,6 @@
 
 @mixin bg($url, $ext)
   background: url('../img/' + $url + '.' + $ext ) center no-repeat;
-  background: image-set(url('../img/' + $url + '.' + $ext) 1x, url('../img/' + $url+ '@2x.' + $ext) 2x, url('../img/' + $url + '@3x.' + $ext) 3x) center no-repeat;
 
 $main-fonts : Muller, sans-serif
 $bg-col: rgba(0,0,0,.3)
@@ -81,12 +80,15 @@ body
 
     &--courson
       @include size(160px, 21px)
+      margin-right: 60px
 
     &--as
       @include size(114px, 40px)
+      margin-right: 63px
 
     &--sp
       @include size(114px, 41px)
+      margin-right: 65px
     &--li
       @include size(112px, 41px)
       
@@ -104,8 +106,8 @@ body
 
 .main-section
   padding-top: 130px
-  padding-bottom: 71px
-  @include bg(header-bg, jpg)
+  padding-bottom: 33px
+  @include bg(header-video, png)
   background-color: $bg-col
   background-size: cover
 
@@ -125,14 +127,18 @@ body
   &__title
     font-weight: bold
     font-size: 60px
-    line-height: 57px
     color: $main-color
-    margin-top: 6px
+    margin-top: 8px
     margin-bottom: 0
+    line-height: 78px
+    &-span
+      line-height: 57px
+      display: block
+      margin-top: 9px
 
   &__info-block
     width: calc(50% - 12px)
-    padding-left: 16px
+    padding-left: 10px
     box-sizing: border-box
     
   &__free
@@ -169,7 +175,7 @@ body
       line-height: 19px
       margin-top: 10px
       margin-bottom: 0
-      max-width: 360px
+      max-width: 350px
 
     &-link
       margin-top: 24px
@@ -393,7 +399,7 @@ body
     margin-top: 40px
 
 .courses
-  @include bg(courses-back, jpg)
+  @include bg(courses-back, png)
   background-size: cover
   margin-top: 79px
   background-color: $bg-col
@@ -401,20 +407,20 @@ body
   &__inner
     @include wrapper
     padding-top: 82px
-    padding-bottom: 80px
+    padding-bottom: 40px
     position: relative
     &:before
       content: ''
       @include size(130px, 306px)
       position: absolute
-      right: calc(100% - 20px)
+      right: calc(100% - 60px)
       top: 20px
       background-color: rgba(255, 255, 255, 0.0539)
       transform: skew(-30deg)
 
   &__wrapper
     display: flex
-    margin-top: 54px
+    margin-top: 36px
     justify-content: space-between
 
   &__button
@@ -476,16 +482,19 @@ body
   margin-top: 82px
 
   &__wrapper
-    padding-top: 32px
+    &--business
+      .catalog__course-list
+        margin-top: 38px
 
   &__course
     &-list
       padding: 0
-      margin: 30px 0 0
+      margin: 0
       list-style: none
       display: flex
       justify-content: space-between
       flex-wrap: wrap
+
     &-item
       margin-bottom: 24px
 
@@ -577,6 +586,9 @@ body
     margin-top: 0
     margin-bottom: 6px
 
+    .dib
+      display: inline-block
+
   &__text
     font-size: 14px
     line-height: 17px
@@ -630,32 +642,32 @@ body
 
 
   &--one
-    @include bgcl(cours-pic-01,jpg)
+    @include bgcl(cours-pic-01,png)
   &--two
-    @include bgcl(cours-pic-02,jpg)
+    @include bgcl(cours-pic-02,png)
   &--three
-    @include bgcl(cours-pic-03,jpg)
+    @include bgcl(cours-pic-03,png)
   &--four
-    @include bgcl(cours-pic-04,jpg)
+    @include bgcl(cours-pic-04,png)
   &--five
-    @include bgcl(cours-pic-05,jpg)
+    @include bgcl(cours-pic-05,png)
   &--six
-    @include bgcl(cours-pic-06,jpg)
+    @include bgcl(cours-pic-06,png)
   &--seven
-    @include bgcl(cours-pic-07,jpg)
+    @include bgcl(cours-pic-07,png)
   &--eight
-    @include bgcl(cours-pic-08,jpg)
+    @include bgcl(cours-pic-08,png)
   &--nine
-    @include bgcl(cours-pic-09,jpg)
+    @include bgcl(cours-pic-09,png)
   &--ten
-    @include bgcl(cours-pic-10,jpg)    
+    @include bgcl(cours-pic-10,png)       
 
   background-color: $bg-col
   
   
 .footer
   margin-top: 56px
-  @include bg(3steps-back, jpg)
+  @include bg(3steps-back, png)
   background-color: $bg-col
   background-size: cover
 
@@ -669,7 +681,7 @@ body
       content: ''
       @include size(130px, 306px)
       position: absolute
-      right: calc(100% - 50px)
+      right: calc(100% - 90px)
       top: 34px
       background-color: rgba(255, 255, 255, 0.0539)
       transform: skew(-30deg)
