@@ -890,8 +890,11 @@ body
 @import slick
 
 @media screen and (max-width: 1023px)
-  .catalog__course-list
-    margin-right: -46px
+  .catalog
+    &__wrapper
+      margin-top: 24px
+    &__course-list
+      margin-right: -46px
   .course
     @include size(270px, 245px)
     margin-right: 12px
@@ -1204,12 +1207,9 @@ body
     padding-left: 20px
     padding-right: 20px
     
-    &__wrapper
-      padding-top: 10px
-      padding-bottom: 14px
     &__course
       &-list
-        margin-top: 12px
+        margin-top: 0
         margin-left: -20px
 
   .footer

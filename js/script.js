@@ -66,13 +66,22 @@ $(function() {
       });
     }
   });
+  var slide = $('.course--five').clone();
 
   $(window).on('load resize', function() {
     if (innerWidth >= 1024) {
+      if ($('#finance .course--five').length <= 0) {
+        $('#business .course--five').remove();
+        $('#finance .catalog__course-list').prepend(slide);
+      }
       if ($('.catalog__course-list').hasClass('slick-slider')) {
         $('.catalog__course-list').slick('unslick');
       }
     } else {
+      if ($('#finance .course--five').length) {
+        $('#finance .course--five').remove();
+        $('#business .catalog__course-list').append(slide);
+      }
       $('.catalog__course-list')
         .not('.slick-initialized')
         .slick({
